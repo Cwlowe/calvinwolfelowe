@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/calvinwolfelowe/static/css/main.556e6426.chunk.css",
+    "main.js": "/calvinwolfelowe/static/js/main.bb5a2d7a.chunk.js",
+    "main.js.map": "/calvinwolfelowe/static/js/main.bb5a2d7a.chunk.js.map",
+    "runtime-main.js": "/calvinwolfelowe/static/js/runtime-main.4d5d3c40.js",
+    "runtime-main.js.map": "/calvinwolfelowe/static/js/runtime-main.4d5d3c40.js.map",
+    "static/js/2.de5526a5.chunk.js": "/calvinwolfelowe/static/js/2.de5526a5.chunk.js",
+    "static/js/2.de5526a5.chunk.js.map": "/calvinwolfelowe/static/js/2.de5526a5.chunk.js.map",
+    "index.html": "/calvinwolfelowe/index.html",
+    "precache-manifest.7e06879996c5d6f25624f518fd4fee17.js": "/calvinwolfelowe/precache-manifest.7e06879996c5d6f25624f518fd4fee17.js",
+    "service-worker.js": "/calvinwolfelowe/service-worker.js",
+    "static/css/main.556e6426.chunk.css.map": "/calvinwolfelowe/static/css/main.556e6426.chunk.css.map",
+    "static/js/2.de5526a5.chunk.js.LICENSE": "/calvinwolfelowe/static/js/2.de5526a5.chunk.js.LICENSE"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4d5d3c40.js",
+    "static/js/2.de5526a5.chunk.js",
+    "static/css/main.556e6426.chunk.css",
+    "static/js/main.bb5a2d7a.chunk.js"
+  ]
+}
