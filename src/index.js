@@ -4,7 +4,7 @@ import './index.css';
 
 import PhotoContainer from './Components/Photography.js';
 import HomeContainer from './Components/Home.js';
-import AboutmeContainer from './Components/AboutMe.js';
+//import AboutmeContainer from './Components/AboutMe.js';
 import Navbar from './Components/navbar.js';
 
 //Content section
@@ -20,7 +20,7 @@ export default class Content extends React.Component{
   }
 
   render(){
-    const content = [<HomeContainer/>,<AboutmeContainer/>,<PhotoContainer/>];
+    const content = [<HomeContainer/>,<PhotoContainer/>];
     return(
       <div className="tab-content" id="tabContent">
       <Navbar getID={this.getID}/>
