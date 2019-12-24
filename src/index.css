@@ -53,13 +53,19 @@ body{
   font-family: 'Lobster', cursive;
 }
 
-/*container styles
+/* container styles */
 .containerStyle{
-  background: #e6ffff;
-  border-radius: 5px;
-  height:70%;
+
   border: 1px solid black;
-}*/
+}
+
+.whiteBack{
+  background: white;
+  border-radius:5px;
+}
+.border{
+  border-left: 3px solid black !important;
+}
 @media screen and (max-width:425px){
 /* Changing the header size to 30px on mobile*/
   .headerStyle{
