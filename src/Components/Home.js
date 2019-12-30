@@ -1,12 +1,10 @@
 import React from 'react';
 import Container from '@material-ui/core/Container';
 import Header from './items.js';
-import CalPhoto from '../img/Calvin_Profile.JPG';
-// import Paper from '@material-ui/core/Paper';
-// import Typography from '@material-ui/core/Typography';
+import CalPhoto from '../img/20190526-Calvin_profile.jpg';
 import {PicTextLayout} from './items.js';
-//Home Section
 
+//Home Section
 export default class HomeContainer extends React.Component{
 
   render(){
