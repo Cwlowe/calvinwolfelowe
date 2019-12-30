@@ -17,8 +17,10 @@ export class PicTextLayout extends React.Component{
     return(
       <div>
         <Grid container>
-          <Grid className="m-2 whiteBack" item xs={2}>
-            <p className="m-2">{this.props.text}</p>
+          <Grid className="m-2 whiteBack imgContainercenter" item xs={7}>
+            <div className="m-2">
+              <img className="imageResize" src={this.props.imgsrc} alt=""/>
+            </div>
           </Grid>
           <Grid className="m-2 whiteBack"item xs={9}>
             <p className="m-2">{this.props.text}</p>
