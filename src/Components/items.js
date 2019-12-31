@@ -12,16 +12,19 @@ export default function Header({title}){
 export function PicTextLayout({text,imgsrc}){
     return(
       <div>
-        <Grid container>
-          <Grid className="m-2 whiteBack imgContainercenter" item xs={5}>
+        <Grid style={{flex: 1,flexDirection: 'column',justifyContent: 'center',alignItems: 'center'}} container>
+          <Grid className="m-2 whiteBack imgContainercenter" item xs={3}>
             <div className="m-2">
               <img className="imageResize" src={imgsrc} alt=""/>
             </div>
           </Grid>
-          <Grid className="m-2 whiteBack"item xs={6}>
-            <p className="m-2">{text}</p>
+          <Grid className="m-2 whiteBack" item xs={5}>
+            {text.map((text,index)=>
+            <p id={index} className="m-2 fontStyling">{text}</p>)}
+
           </Grid>
         </Grid>
+
       </div>
     );
 }
