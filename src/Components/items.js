@@ -19,9 +19,10 @@ export function PicTextLayout({text,imgsrc}){
             </div>
           </Grid>
           <Grid className="m-2 whiteBack" item xs={5}>
-            {text.map((text,index)=>
-            <p id={index} className="m-2 fontStyling">{text}</p>)}
-
+            <div className="m-3">
+              {text.map((text,index)=>
+              <p id={index} className="m-2 fontStyling">{text}</p>)}
+            </div>
           </Grid>
         </Grid>
 
