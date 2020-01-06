@@ -1,18 +1,7 @@
 import React, {useState} from 'react';
 
 export default function Footer(){
-  const style = {
-    backgroundColor: "#313742",
-    borderTop: "1px solid #E7E7E7",
-    textAlign: "left",
-    padding: "20px",
-    position: "fixed",
-    left: "0",
-    bottom: "0",
-    height: "60px",
-    width: "100%",
-
-  }
+  
   const [links] =useState([
     {
       href: "mailto:calvinwolfelowe@gmail.com",
@@ -31,7 +20,7 @@ export default function Footer(){
     }
   ]);
   return(
-    <div style={style}>
+    <div className={"footerStyles"}>
       {console.log(links)}
       {links.map((links, index)=>
         <a className="linkStyles m-2" target="_blank" rel="noopener noreferrer" href={links.href}><i className={links.icon}></i> {links.text}</a>)}
