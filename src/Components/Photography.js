@@ -7,7 +7,7 @@ export default class PhotoContainer extends React.Component{
   render(){
     return(
       <Container maxWidth="lg">
-        <p> hello world</p>
+        <p>I added a change 1</p>
       </Container>
     );
   }

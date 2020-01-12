@@ -1,6 +1,3 @@
-body{
-  
-}
 
 #homeSection{
   width:50%;
@@ -15,12 +12,10 @@ body{
   background-repeat: space;
   background-size:cover; 
   height:60%;
-
 }
 
 /* Nav bar styles */
 .navBar{
-  
   list-style-type: none;
   text-align: left !important;
   opacity: 70%;
