@@ -18,7 +18,7 @@
 .navBar{
   list-style-type: none;
   text-align: left !important;
-  opacity: 70%;
+  opacity: 70% !important;
 }
 .navTabs:active{
   color:black;
