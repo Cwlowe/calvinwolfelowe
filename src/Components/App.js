@@ -3,26 +3,35 @@ import '../index.css';
 
 import PhotoContainer from './Photography.js';
 import HomeContainer from './Home.js';
+import BannerContainer from './Banner.js'; 
 //import AboutmeContainer from './Components/AboutMe.js';
-import Navbar from './navbar.js';
 import Footer from './Footer.js';
+import AboutMeContainer from './AboutMe';
 //Content section
 export default function App(){
   let index = 0;
   const [content] = useState([
     {
+      title:"Welcome",
+      comp: <HomeContainer/>,
+      id:0
+    },
+    {
       title:"About me",
-      comp: <HomeContainer/>
+      comp: <AboutMeContainer/>,
+      id:1
     },
     {
       title:"Photography",
-      comp: <PhotoContainer/>
+      comp: <PhotoContainer/>,
+      id:2
     }
   ]);
   const [currentcontent, setCurrentContent] = useState([
     {
-      title:"About me",
-      comp: <HomeContainer/>
+      title:"Welcome",
+      comp: <HomeContainer/>,
+      id:0
     }
   ]);
   const updateContent = index =>{
@@ -32,7 +41,8 @@ export default function App(){
 
   return(
     <div className="tab-content" id="tabContent">
-    <Navbar updateContent={updateContent}/>
+    
+    <BannerContainer content={currentcontent[0].title} updateContent={updateContent} />
     {currentcontent[index].comp}
     <Footer/>
   	</div>

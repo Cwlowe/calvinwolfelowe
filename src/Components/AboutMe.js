@@ -1,9 +1,14 @@
 import React from 'react';
-// import Content from '../index.js';
+import Container from '@material-ui/core/Container';
+import CalPhoto from '../img/20190526-Calvin_profile.jpg';
+import {PicTextLayout} from './items.js';
 
-//About me Section
-export default function AboutmeContainer(){
+export default function AboutMeContainer(){
+  const aboutmeinfo = ["Hello my name is Calvin. I am a deveoper that develops and keeps on developing. I've been working on this website to showcase the different hobbies I enjoy and hope it sparks interest in other people."
+  , "Some of my hobbies are hiking, fishing, photography, and playing videogames."];
     return(
-      <h1 className="text-center mt-4 mx-1 mx-md-0 headerStyle fontStyling">About me</h1>
+      <Container fixed className="p-0">
+          <PicTextLayout text={aboutmeinfo} imgsrc={CalPhoto} />
+      </Container>
     );
 }

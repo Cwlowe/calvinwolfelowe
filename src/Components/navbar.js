@@ -6,8 +6,9 @@ export default function Navbar({updateContent}){
     return(
       <div className="navBar">
         <div>
-          <Navitems updateContent={updateContent} id="0" href="#homeSection" text="Home"  />
-          <Navitems updateContent={updateContent} id="1" href="#photography" text="Photography"  />
+          <Navitems updateContent={updateContent} id="0" href="#home" text="Home"  />
+          <Navitems updateContent={updateContent} id="1" href="#aboutme" text="About Me"  />
+          <Navitems updateContent={updateContent} id="2" href="#photography" text="Photography"  />
         </div>
       </div>
     );

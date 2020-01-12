@@ -1,12 +1,14 @@
 import React from 'react';
-import Header from './items.js';
+import { Container } from '@material-ui/core';
 // import Content from '../index.js';
 
 //Photography Section
 export default class PhotoContainer extends React.Component{
   render(){
     return(
-      <Header title={"Photography Section"}/>
+      <Container maxWidth="lg">
+        <p> hello world</p>
+      </Container>
     );
   }
 }

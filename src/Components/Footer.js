@@ -23,7 +23,7 @@ export default function Footer(){
     <div className={"footerStyles"}>
       {console.log(links)}
       {links.map((links, index)=>
-        <a className="linkStyles m-2" target="_blank" rel="noopener noreferrer" href={links.href}><i className={links.icon}></i> {links.text}</a>)}
+        <a className="linkStyles m-2" target="_blank" rel="noopener noreferrer" id={index} href={links.href}><i className={links.icon}></i> {links.text}</a>)}
 
     </div>
   )

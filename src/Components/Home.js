@@ -1,19 +1,21 @@
 import React from 'react';
 import Container from '@material-ui/core/Container';
-import Header from './items.js';
-import CalPhoto from '../img/20190526-Calvin_profile.jpg';
-import {PicTextLayout} from './items.js';
+import {HeaderTextLayout} from './items.js';
+import img1 from "../img/20191020-Aboutme.jpg";
+import img2 from "../img/Photography.jpg";
+import img3 from "../img/blog.jpg";
 
 //Home Section
 export default function HomeContainer(){
-  const aboutmeinfo = ["Hello my name is Calvin. I am a deveoper that develops and keeps on developing. I've been working on this website to showcase the different hobbies I enjoy and hope it sparks interest in other people."
-  , "Some of my hobbies are hiking, fishing, photography, and playing videogames."];
+  
+  const content= {
+    copy1:img1,
+    copy2:img2,
+    copy3:img3
+  }
     return(
-      <div>
-        <Header className="mb-3" title={"About Me"}/>
-        <Container maxWidth="lg">
-            <PicTextLayout text={aboutmeinfo} imgsrc={CalPhoto} />
-        </Container>
-      </div>
+      <Container className="p-0 homeBack1" maxWidth="lg">
+          <HeaderTextLayout content={content}/>
+      </Container>
     );
 }
