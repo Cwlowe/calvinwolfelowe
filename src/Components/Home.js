@@ -8,14 +8,10 @@ import img3 from "../img/blog.jpg";
 //Home Section
 export default function HomeContainer(){
   
-  const content= {
-    copy1:img1,
-    copy2:img2,
-    copy3:img3
-  }
+  const content= [img1,img2,img3];
     return(
       <Container className="p-0 homeBack1" maxWidth="lg">
-          <HeaderTextLayout content={content}/>
+          <HeaderTextLayout content={content} title={"Hello!"}/>
       </Container>
     );
 }
