@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React from 'react'
 import Navbar from './navbar.js';
 import Header from './items.js';
 import { Container } from '@material-ui/core';
