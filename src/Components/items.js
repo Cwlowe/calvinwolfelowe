@@ -29,7 +29,7 @@ export function PicTextLayout({text,imgsrc}){
     );
 }
 
-export function HeaderTextLayout({content}){
+export function HeaderTextLayout({content,title}){
   const imageClick = (id)=>{
     console.log(id);
   }
@@ -37,20 +37,23 @@ export function HeaderTextLayout({content}){
     <Container fixed >
       <Grid container >
         <Grid className="mt-5" item xs={12} >
-          <h2 className="h2Styling text-center m-4">Hello!</h2>
+  <h2 className="h2Styling text-center m-4">{title}</h2>
         </Grid>
       </Grid>
       
       <Grid className="mb-5" container style={{flex: 1,flexDirection: 'row',justifyContent: 'center',alignItems: 'center'}}>
+        {content.map((image,index)=>
         <Grid item xs={12} sm={6} md={4} align="center">
-            <img className="imgPStyle mb-3 mb-lg-0" alt="" onClick={() => imageClick(0)} src={content.copy1}/>
+        <img className="imgPStyle mb-3 mb-lg-0" alt="" onClick={() => imageClick(0)} src={content[index]}/>
         </Grid>
-        <Grid item xs={12} sm={6} md={4} align="center">
+        )}
+        
+        {/* <Grid item xs={12} sm={6} md={4} align="center">
             <img className="imgPStyle mb-3 mb-lg-0" alt="" onClick={() => imageClick(1)} src={content.copy2}/>
         </Grid>
         <Grid item xs={12} sm={6} md={4} align="center">
             <img className="imgPStyle mb-3 mb-lg-0" alt="" onClick={() => imageClick(2)} src={content.copy3}/>
-        </Grid>
+        </Grid> */}
       </Grid>
     </Container>
   );
