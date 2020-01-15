@@ -11,7 +11,7 @@ export default function HomeContainer(){
   const content= [img1,img2,img3];
     return(
       <Container className="p-0 homeBack1" maxWidth="lg">
-          <HeaderTextLayout content={content} title={"Hello!"}/>
+          <HeaderTextLayout content={content} title="Hello!"/>
       </Container>
     );
 }

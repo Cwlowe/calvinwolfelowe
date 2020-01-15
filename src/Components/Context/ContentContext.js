@@ -8,22 +8,18 @@ import AboutMeContainer from '../AboutMe';
 export const ContentContext = createContext();
 
 export const ContentProvider = (props) => {
-    let index = 0;
     const [content] = useState([
         {
           title:"Welcome",
           comp: <HomeContainer/>,
-          id:0
         },
         {
           title:"About me",
           comp: <AboutMeContainer/>,
-          id:1
         },
         {
           title:"Photography",
           comp: <PhotoContainer/>,
-          id:2
         }
       ]);
 
@@ -31,17 +27,21 @@ export const ContentProvider = (props) => {
     {
         title:"Welcome",
         comp: <HomeContainer/>,
-        id:0
     }
     ]);
       
     const updateContent = index =>{
+        console.log("Updated: " + index);
         const newContent = [content[index]];
         setCurrentContent(newContent);
     }
-
+    const contentData = {
+      currentContent: currentContent,
+      setCurrentContent: setCurrentContent,
+      updateContent: updateContent
+    }
     return(
-        <ContentContext.Provider value={currentContent} >
+        <ContentContext.Provider value={contentData}>
             {props.children}
         </ContentContext.Provider>
     );
