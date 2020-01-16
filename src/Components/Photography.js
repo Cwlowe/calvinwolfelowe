@@ -14,11 +14,30 @@ import img6 from '../img/flock-of-birds-917494.jpg';
 
 //Photography Section
 export default function PhotoContainer(){
-  const content = [img1, img2, img3, img4, img5, img6];
+  const content = {
+    0:{
+      image:img1,
+    },
+    1:{
+      image:img2,
+    },
+    2:{
+      image:img3,
+    },
+    3:{
+      image:img4,
+    },
+    4:{
+      image:img5,
+    },
+    5:{
+      image:img6,
+    }
+  }
 
   return(
     <Container maxWidth="lg">
-      <HeaderTextLayout content={content} title="hello"/>
+      <HeaderTextLayout content={content} title=""/>
     </Container>
   );
 }

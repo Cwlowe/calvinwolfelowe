@@ -7,8 +7,20 @@ import img3 from "../img/blog.jpg";
 
 //Home Section
 export default function HomeContainer(){
-  
-  const content= [img1,img2,img3];
+  const content = {
+    0:{
+      image: img1,
+      text: "About me"
+    },
+    1:{
+      image: img2,
+      text:"Photography"
+    },
+    2:{
+      image: img3,
+      text:"Blogs"
+    }
+  };
     return(
       <Container className="p-0 homeBack1" maxWidth="lg">
           <HeaderTextLayout content={content} title="Hello!"/>
