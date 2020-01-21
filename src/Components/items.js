@@ -1,6 +1,7 @@
 import React from 'react';
 import Grid from '@material-ui/core/Grid';
 import { Container } from '@material-ui/core';
+import {Link} from 'react-router-dom';
 // import { makeStyles } from '@material-ui/core/styles';
 // import Paper from '@material-ui/core/Paper';
 
@@ -33,7 +34,7 @@ export function RPicTextLayout({text,imgsrc}){
       <Grid container style={{flex: 1,flexDirection: 'row',justifyContent: 'center',alignItems: 'center'}}>
         
         <Grid className="whiteBack " item xs={11} sm={6} md={7} >
-          <div className="">
+          <div className="mx-md-3">
             {text.map((text,index)=>
             <p key={index} className="m-2 textStyling">{text}</p>)}
           </div>
@@ -48,9 +49,6 @@ export function RPicTextLayout({text,imgsrc}){
 }
 
 export function HeaderTextLayout({content,title}){
-  const imageClick = (id)=>{
-    console.log(id);
-  }
 
   return(
     <Container fixed >
@@ -61,10 +59,12 @@ export function HeaderTextLayout({content,title}){
       </Grid>
       
       <Grid className="mb-5" container style={{flex: 1,flexDirection: 'row',justifyContent: 'center',alignItems: 'center'}}>
-        {Object.keys(content).map((pic,index)=>
+        {Object.keys(content).map((index)=>
         <Grid className="mb-3 HtextContainer" item xs={12} sm={6} md={4} align="center" key={index}>
-        <img className="imgPStyle mb-3 mb-lg-0" alt="" onClick={() => imageClick(index)} src={content[index].image}/>
+        <Link to={content[index].url}>
+        <img className="imgPStyle mb-3 mb-lg-0" alt="" src={content[index].image}/>
         {content[index].text !== undefined ? <p className="imgPText">{content[index].text}</p> : null }
+        </Link>
         </Grid>
         )}
       </Grid>

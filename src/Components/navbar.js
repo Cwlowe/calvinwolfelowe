@@ -1,24 +1,24 @@
-import React, {useContext} from 'react';
-// import Content from '../index.js';
-import {ContentContext} from "./Context/ContentContext.js";
+import React from 'react';
+
+import {Link} from 'react-router-dom';
 
 //Navbar section
 export default function Navbar({updateContent}){
     return(
-      <div className="navBar">
-        <div>
-          <Navitems id="0" href="#home" text="Home"  />
-          <Navitems id="1" href="#aboutme" text="About Me"  />
-          <Navitems id="2" href="#photography" text="Photography"  />
-        </div>
-      </div>
+      <ul className="navBarStyle">
+          <Navitems id="0" text="Home" url="/"/>
+          <Navitems id="1" text="About Me" url="/aboutme" />
+          <Navitems id="2" text="Photography" url="/photography" />
+          <Navitems id="3" text="Blog" url="/blog" />
+      </ul>
     );
 }
 // Navitems
-function Navitems({id, href, text}){
-  const Content = useContext(ContentContext);
-
+function Navitems({id,text,url}){
   return(
-      <button id={id} className="navTabs headerFontStyling m-2" data-toggle="tab" role="tab" aria-controls="homeSection" aria-selected="true" onClick={() => Content.updateContent(id)}>{text}</button>
+    <Link id={id} className="navTabs headerFontStyling m-2" to={url}>
+      <li className="m-1">{text}</li>
+    </Link>
+      
   );
 }

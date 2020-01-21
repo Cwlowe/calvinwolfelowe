@@ -1,22 +1,34 @@
 {
   "files": {
-    "main.css": "/calvinwolfelowe/static/css/main.556e6426.chunk.css",
-    "main.js": "/calvinwolfelowe/static/js/main.bb5a2d7a.chunk.js",
-    "main.js.map": "/calvinwolfelowe/static/js/main.bb5a2d7a.chunk.js.map",
-    "runtime-main.js": "/calvinwolfelowe/static/js/runtime-main.4d5d3c40.js",
-    "runtime-main.js.map": "/calvinwolfelowe/static/js/runtime-main.4d5d3c40.js.map",
-    "static/js/2.de5526a5.chunk.js": "/calvinwolfelowe/static/js/2.de5526a5.chunk.js",
-    "static/js/2.de5526a5.chunk.js.map": "/calvinwolfelowe/static/js/2.de5526a5.chunk.js.map",
+    "main.css": "/calvinwolfelowe/static/css/main.5bc67f47.chunk.css",
+    "main.js": "/calvinwolfelowe/static/js/main.d5499fd9.chunk.js",
+    "main.js.map": "/calvinwolfelowe/static/js/main.d5499fd9.chunk.js.map",
+    "runtime-main.js": "/calvinwolfelowe/static/js/runtime-main.bddbd785.js",
+    "runtime-main.js.map": "/calvinwolfelowe/static/js/runtime-main.bddbd785.js.map",
+    "static/js/2.0484d2c8.chunk.js": "/calvinwolfelowe/static/js/2.0484d2c8.chunk.js",
+    "static/js/2.0484d2c8.chunk.js.map": "/calvinwolfelowe/static/js/2.0484d2c8.chunk.js.map",
     "index.html": "/calvinwolfelowe/index.html",
-    "precache-manifest.7e06879996c5d6f25624f518fd4fee17.js": "/calvinwolfelowe/precache-manifest.7e06879996c5d6f25624f518fd4fee17.js",
+    "precache-manifest.84624aef84f57cdc285140c87ef7e866.js": "/calvinwolfelowe/precache-manifest.84624aef84f57cdc285140c87ef7e866.js",
     "service-worker.js": "/calvinwolfelowe/service-worker.js",
-    "static/css/main.556e6426.chunk.css.map": "/calvinwolfelowe/static/css/main.556e6426.chunk.css.map",
-    "static/js/2.de5526a5.chunk.js.LICENSE": "/calvinwolfelowe/static/js/2.de5526a5.chunk.js.LICENSE"
+    "static/css/main.5bc67f47.chunk.css.map": "/calvinwolfelowe/static/css/main.5bc67f47.chunk.css.map",
+    "static/js/2.0484d2c8.chunk.js.LICENSE": "/calvinwolfelowe/static/js/2.0484d2c8.chunk.js.LICENSE",
+    "static/media/20190526-Calvin_profile.jpg": "/calvinwolfelowe/static/media/20190526-Calvin_profile.50aca6f4.jpg",
+    "static/media/20191020-Aboutme.jpg": "/calvinwolfelowe/static/media/20191020-Aboutme.083014fb.jpg",
+    "static/media/Hawaii1.jpg": "/calvinwolfelowe/static/media/Hawaii1.0cf7fa71.jpg",
+    "static/media/Hawaii2.jpg": "/calvinwolfelowe/static/media/Hawaii2.be73c54c.jpg",
+    "static/media/Hawaii3.jpg": "/calvinwolfelowe/static/media/Hawaii3.2d89dc37.jpg",
+    "static/media/Hawaii4.jpg": "/calvinwolfelowe/static/media/Hawaii4.55f0039c.jpg",
+    "static/media/Hawaii5.jpg": "/calvinwolfelowe/static/media/Hawaii5.b627b854.jpg",
+    "static/media/Photography.jpg": "/calvinwolfelowe/static/media/Photography.e34f11c1.jpg",
+    "static/media/UCSC IMAGE.png": "/calvinwolfelowe/static/media/UCSC IMAGE.7dbe654c.png",
+    "static/media/blog.jpg": "/calvinwolfelowe/static/media/blog.8f1e22e5.jpg",
+    "static/media/index.css": "/calvinwolfelowe/static/media/clouds-conifer-daylight-environment-629162.46129a94.jpg",
+    "static/media/flock-of-birds-917494.jpg": "/calvinwolfelowe/static/media/flock-of-birds-917494.c2a3c37a.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.4d5d3c40.js",
-    "static/js/2.de5526a5.chunk.js",
-    "static/css/main.556e6426.chunk.css",
-    "static/js/main.bb5a2d7a.chunk.js"
+    "static/js/runtime-main.bddbd785.js",
+    "static/js/2.0484d2c8.chunk.js",
+    "static/css/main.5bc67f47.chunk.css",
+    "static/js/main.d5499fd9.chunk.js"
   ]
 }

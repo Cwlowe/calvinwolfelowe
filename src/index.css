@@ -15,16 +15,19 @@
 }
 
 /* Nav bar styles */
-.navBar{
+.navBarStyle{
   list-style-type: none;
   text-align: left !important;
+  display: flex;
+  
 }
 .navTabs:active{
-  color:black;
+  color: white;
 }
 .navTabs{
   border-radius: 5px;
   border:2px solid black;
+  color: black;
 }
 .navTabs:focus{
   background-color: #000000;
@@ -109,6 +112,7 @@
   transform:translate(-50%,-50%);
   font-size:30px;
   font-family: 'Roboto', sans-serif;
+  color: white;
 }
 .HtextContainer{
   position:relative;

@@ -10,15 +10,18 @@ export default function HomeContainer(){
   const content = {
     0:{
       image: img1,
-      text: "About me"
+      text: "About me",
+      url:"/aboutme"
     },
     1:{
       image: img2,
-      text:"Photography"
+      text:"Photography",
+      url:"/photography"
     },
     2:{
       image: img3,
-      text:"Blogs"
+      text:"Blogs",
+      url:"/blog"
     }
   };
     return(
