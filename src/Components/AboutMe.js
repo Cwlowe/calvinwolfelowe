@@ -4,6 +4,7 @@ import CalPhoto from '../img/20190526-Calvin_profile.jpg';
 import UCSCicon from '../img/UCSC IMAGE.png';
 import {PicTextLayout} from './items.js';
 import {RPicTextLayout} from './items.js';
+import Footer from './Footer.js';
 
 export default function AboutMeContainer(){
   const aboutmeInfo = ["Hello my name is Calvin. I have a passion for web development, so I built this website showcase the different hobbies I enjoy and hope it sparks interest in other people.",
@@ -12,9 +13,13 @@ export default function AboutMeContainer(){
   const collegeInfo = ["I Graduated from Univeristy of California Santa Cruz. Being part of UCSC was a great experience for me. Not only did I get to enjoying nature, I also got to meeting a lot of talented and friendly people.",
 ""];
     return(
-      <Container fixed className="p-0">
+      <div>
+        <Container fixed className="p-0" maxWidth="md">
           <PicTextLayout text={aboutmeInfo} imgsrc={CalPhoto} />
           <RPicTextLayout text={collegeInfo} imgsrc={UCSCicon} />
       </Container>
+      <Footer/>
+      </div>
+      
     );
 }

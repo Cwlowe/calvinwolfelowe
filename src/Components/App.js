@@ -11,7 +11,6 @@ import PhotoContainer from './Photography.js';
 import BannerContainer from './Banner.js'; 
 
 //import AboutmeContainer from './Components/AboutMe.js';
-import Footer from './Footer.js';
 import {ContentContext} from './Reducer/ContentContext.js';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
@@ -25,11 +24,11 @@ export default function App(){
           <BannerContainer title={value.currentContent[0].title} />
           <Switch>
             <Route path="/" exact component={HomeContainer} />
+            <Route path="/calvinwolfelowe/" component={HomeContainer}/>
             <Route path="/aboutme" component={AboutMeContainer}/>
             <Route path="/photography" component={PhotoContainer}/>
             <Route path="/blog" component={Blog}/>
           </Switch>
-          <Footer/>
         </div>
       </Router>
       

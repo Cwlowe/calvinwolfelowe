@@ -2,6 +2,8 @@ import React from 'react';
 import Grid from '@material-ui/core/Grid';
 import { Container } from '@material-ui/core';
 import {Link} from 'react-router-dom';
+// eslint-disable-next-line
+import {Zoom} from '@material-ui/core';
 // import { makeStyles } from '@material-ui/core/styles';
 // import Paper from '@material-ui/core/Paper';
 
@@ -49,7 +51,7 @@ export function RPicTextLayout({text,imgsrc}){
 }
 
 export function HeaderTextLayout({content,title}){
-
+  
   return(
     <Container fixed >
       <Grid container >
@@ -61,10 +63,10 @@ export function HeaderTextLayout({content,title}){
       <Grid className="mb-5" container style={{flex: 1,flexDirection: 'row',justifyContent: 'center',alignItems: 'center'}}>
         {Object.keys(content).map((index)=>
         <Grid className="mb-3 HtextContainer" item xs={12} sm={6} md={4} align="center" key={index}>
-        <Link to={content[index].url}>
-        <img className="imgPStyle mb-3 mb-lg-0" alt="" src={content[index].image}/>
-        {content[index].text !== undefined ? <p className="imgPText">{content[index].text}</p> : null }
-        </Link>
+          <Link to={content[index].url}>
+            <img className="imgPStyle mb-3 mb-lg-0" alt="" src={content[index].image}/>
+            {content[index].text !== undefined ? <p className="imgPText">{content[index].text}</p> : null }
+          </Link>
         </Grid>
         )}
       </Grid>

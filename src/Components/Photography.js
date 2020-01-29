@@ -8,7 +8,7 @@ import img3 from '../img/Hawaii3.jpg';
 import img4 from '../img/Hawaii4.jpg';
 import img5 from '../img/Hawaii5.jpg';
 import img6 from '../img/flock-of-birds-917494.jpg';
-
+import Footer from './Footer.js';
 
 // import Content from '../index.js';
 
@@ -36,8 +36,11 @@ export default function PhotoContainer(){
   }
 
   return(
+    <div>
     <Container maxWidth="lg">
       <HeaderTextLayout content={content} title=""/>
     </Container>
+    <Footer/>
+    </div> 
   );
 }

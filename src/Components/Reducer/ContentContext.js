@@ -35,7 +35,7 @@ export const ContentProvider = (props) => {
     {
         title:"Welcome",
         comp: <HomeContainer/>,
-
+        href:"home"
     }
     ]);
       

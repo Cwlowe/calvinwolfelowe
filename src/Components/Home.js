@@ -4,7 +4,7 @@ import {HeaderTextLayout} from './items.js';
 import img1 from "../img/20191020-Aboutme.jpg";
 import img2 from "../img/Photography.jpg";
 import img3 from "../img/blog.jpg";
-
+import Footer from './Footer.js';
 //Home Section
 export default function HomeContainer(){
   const content = {
@@ -25,8 +25,12 @@ export default function HomeContainer(){
     }
   };
     return(
+      <div>
       <Container className="p-0 homeBack1" maxWidth="lg">
           <HeaderTextLayout content={content} title="Hello!"/>
       </Container>
+      <Footer/>
+      </div>
+      
     );
 }
