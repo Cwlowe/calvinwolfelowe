@@ -1,0 +1,23 @@
+/*footer*/
+.linkStyles {
+  color: white;
+}
+
+.footer {
+  color: white;
+}
+
+.footerStyles {
+  background-color: #313742;
+  border-top: 1px solid #E7E7E7;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  padding: 20px;
+  position: static;
+  left: 0;
+  bottom: 0;
+  height: 60px;
+  width: 100%;
+}
+/*# sourceMappingURL=footer.css.map */

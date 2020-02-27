@@ -1,5 +1,5 @@
 import React, {useContext} from 'react';
-import '../index.css';
+import '../styles/style.css';
 
 
 //Conent

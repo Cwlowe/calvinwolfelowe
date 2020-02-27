@@ -7,10 +7,10 @@ import {RPicTextLayout} from './items.js';
 import Footer from './Footer.js';
 
 export default function AboutMeContainer(){
-  const aboutmeInfo = ["Hello my name is Calvin. I have a passion for web development, so I built this website showcase the different hobbies I enjoy and hope it sparks interest in other people.",
-  "Some of my hobbies are hiking, fishing, photography, and playing videogames. I hope you enjoy my site and leave any feedback to my email. Thank you.",
+  const aboutmeInfo = ["Hello, my name is Calvin. I am currently working as a web developer. I enjoy working on small projects such as this website to showcase my hobbies.",
+  "Some of the hobbies I enjoy are hiking, fishing, and photography. I hope you enjoy my site and leave any feedback to my email. Thank you.",
   ];
-  const collegeInfo = ["I Graduated from Univeristy of California Santa Cruz. Being part of UCSC was a great experience for me. Not only did I get to enjoying nature, I also got to meeting a lot of talented and friendly people.",
+  const collegeInfo = ["I graduated from Univeristy of California Santa Cruz with a BS in computer science. You can check out more of my projects that I have worked on through my github.",
 ""];
     return(
       <div>

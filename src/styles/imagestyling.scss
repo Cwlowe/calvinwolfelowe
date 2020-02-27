@@ -1,0 +1,30 @@
+/** images styling **/
+.imgStyling{
+  border-radius:10%;
+  border: 2px solid black;
+}
+/* image paragraph styling */
+.imgPStyle{
+  border-radius:2%;
+  align-items:center;
+  width:250px;
+  height: 250px;
+  object-fit: cover;
+  transition: box-shadow .3s;
+}
+
+.imgPStyle:hover{
+  cursor: pointer;
+  /* box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5); */
+  box-shadow: 0 0 11px 1px rgba(0, 0, 0, 0.5);
+  
+}
+.imgPText{
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  font-size:30px;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+}

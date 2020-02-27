@@ -73,3 +73,11 @@ export function HeaderTextLayout({content,title}){
     </Container>
   );
 }
+
+export function BlogTextLayout(){
+  return(
+    <div>
+      
+    </div>
+  )
+}

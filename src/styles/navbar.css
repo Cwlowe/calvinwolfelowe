@@ -1,0 +1,33 @@
+/* Nav bar styles */
+.navBarStyle {
+  list-style-type: none;
+  text-align: left !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navTabs:active {
+  color: white;
+}
+
+.navTabs {
+  border-radius: 5px;
+  border: 2px solid black;
+  color: black;
+}
+
+.navTabs:focus {
+  background-color: #000000;
+  color: white;
+  outline: none;
+}
+
+.active a {
+  background-color: white !important;
+}
+
+.nav-link {
+  color: white;
+}
+/*# sourceMappingURL=navbar.css.map */
