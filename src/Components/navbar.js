@@ -5,7 +5,6 @@ import {Link} from 'react-router-dom';
 export default function Navbar({updateContent}){
     return(
         <ul className="navBarStyle ">
-          <img alt="Calvin wolfe lowe. Enjoy life to the fullest" src="src/img/Callogo.png" />
           <Navitems id="0" text="Home" url="/"/>
           <Navitems id="1" text="About Me" url="/aboutme" />
           <Navitems id="2" text="Photography" url="/photography" />
