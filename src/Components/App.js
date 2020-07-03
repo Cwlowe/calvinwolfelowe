@@ -17,14 +17,15 @@ import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 //Content section
 export default function App(){
   const value = useContext(ContentContext);
-
+  console.log(process.env.PUBLIC_URL);
   return(
-      <Router>
+    
+      <Router basename={process.env.PUBLIC_URL}>
         <div className="tab-content" id="tabContent">
           <BannerContainer title={value.currentContent[0].title} />
           <Switch>
             <Route path="/" exact component={HomeContainer} />
-            <Route path="/calvinwolfelowe/" component={HomeContainer}/>
+            {/* <Route path="/calvinwolfelowe/" component={HomeContainer}/> */}
             <Route path="/aboutme" component={AboutMeContainer}/>
             <Route path="/photography" component={PhotoContainer}/>
             <Route path="/blog" component={Blog}/>
