@@ -5,52 +5,53 @@
 @import "./imagestyling";
 
 .HtextContainer{
-    position:relative;
-    text-align:center;
-    color:white;
+  position:relative;
+  text-align:center;
+  color:white;
+}
+/* container styles */
+.containerStyle{
+  border: 1px solid black;
+}
+
+.whiteBack{
+  background: white;
+  border-radius:5px;
+}
+.border{
+  border-left: 3px solid black !important;
+}
+.imageResize{
+  max-width:100%;
+  max-height:100%;
+}
+/* Home section*/
+.homeBack1{
+  background-color:white;
+}
+/* .imgContainercenter{
+  align-self: 'center';
+} */
+
+/* Media query from Mobile viewport 424.999px and below */
+@media screen and (max-width:424.999px){
+/* Changing the header size to 30px on mobile*/
+  .headerStyle{
+    font-size:60px;
+    letter-spacing: 3px;
   }
-  /* container styles */
-  .containerStyle{
-    border: 1px solid black;
+  /*Smaller image size for mobile viewports */
+  .imgPStyle{
+    width:150px;
+    height: 150px;
   }
-  
-  .whiteBack{
-    background: white;
-    border-radius:5px;
+
+}
+/* Media query from Tablet viewport 425px to 1023.999px*/
+@media (min-width:425px) and (max-width:1023.999px){
+  .imgPStyle{
+    width:200px;
+    height: 200px;
   }
-  .border{
-    border-left: 3px solid black !important;
-  }
-  .imageResize{
-    max-width:100%;
-    max-height:100%;
-  }
-  /* Home section*/
-  .homeBack1{
-    background-color:white;
-  }
-  /* .imgContainercenter{
-    align-self: 'center';
-  } */
-  
-  /* Media query from Mobile viewport 424.999px and below */
-  @media screen and (max-width:424.999px){
-  /* Changing the header size to 30px on mobile*/
-    .headerStyle{
-      font-size:60px;
-    }
-    /*Smaller image size for mobile viewports */
-    .imgPStyle{
-      width:150px;
-      height: 150px;
-    }
-  
-  }
-  /* Media query from Tablet viewport 425px to 1023.999px*/
-  @media (min-width:425px) and (max-width:1023.999px){
-    .imgPStyle{
-      width:200px;
-      height: 200px;
-    }
-  
-  }
+
+}

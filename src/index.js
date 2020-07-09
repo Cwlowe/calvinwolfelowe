@@ -8,8 +8,7 @@ function Index(){
     return(
     <ContentProvider>
         <App/>
-    </ContentProvider>    
-    
+    </ContentProvider> 
     );
 }
 ReactDOM.render(<Index/>, document.getElementById('contentSection'));

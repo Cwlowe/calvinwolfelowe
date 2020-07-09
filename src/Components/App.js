@@ -2,12 +2,12 @@ import React, {useContext} from 'react';
 import '../styles/style.css';
 
 
-//Conent
+//Content
 import HomeContainer from './Home.js';
 import AboutMeContainer from './AboutMe';
 import Blog from './Blog.js';
 import PhotoContainer from './Photography.js';
-
+import Testcomp from './test';
 import BannerContainer from './Banner.js'; 
 
 //import AboutmeContainer from './Components/AboutMe.js';
@@ -29,6 +29,8 @@ export default function App(){
             <Route path="/aboutme" component={AboutMeContainer}/>
             <Route path="/photography" component={PhotoContainer}/>
             <Route path="/blog" component={Blog}/>
+            <Route path="/Testcomp" component={Testcomp}/>
+
           </Switch>
         </div>
       </Router>

@@ -1,28 +1,28 @@
 /* Nav bar styles */
 .navBarStyle{
-    list-style-type: none;
-    text-align: left !important;
-    display: flex;
-    
-  }
-  .navTabs:active{
-    color: white;
-  }
-  .navTabs{
-    border-radius: 5px;
-    border:2px solid black;
-    color: black;
-  }
-  .navTabs:focus{
-    background-color: #000000;
-    color:white;
-    outline: none;
-  }
+  list-style-type: none;
+  text-align: left !important;
+  display: flex;
   
-  .active a {
-    background-color: white !important;
-  }
-  
-  .nav-link{
-    color:white;
-  }
+}
+.navTabs:active{
+  color: white;
+}
+.navTabs{
+  border-radius: 5px;
+  color: black;
+  // text-decoration: underline;
+}
+.navTabs:focus{
+  background-color: #000000;
+  color:white;
+  outline: none;
+}
+
+.active a {
+  background-color: white !important;
+}
+
+.nav-link{
+  color:white;
+}

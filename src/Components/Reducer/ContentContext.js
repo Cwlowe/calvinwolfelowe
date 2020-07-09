@@ -44,6 +44,7 @@ export const ContentProvider = (props) => {
         const newContent = [content[index]];
         setCurrentContent(newContent);
     }
+    
     const contentData = {
       currentContent: currentContent,
       setCurrentContent: setCurrentContent,

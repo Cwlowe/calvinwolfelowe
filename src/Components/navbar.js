@@ -16,7 +16,7 @@ export default function Navbar({updateContent}){
 // Navitems
 function Navitems({id,text,url}){
   return(
-    <Link id={id} className="navTabs headerFontStyling m-2" to={url}>
+    <Link id={id} className="navTabs navFontStyling m-2" to={url}>
       <li className="m-1">{text}</li>
     </Link>
       

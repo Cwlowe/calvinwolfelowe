@@ -1,7 +1,7 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
+import { Link } from "react-router-dom";
 
 export default function Footer(){
-  
   const [links] =useState([
     {
       href: "mailto:calvinwolfelowe@gmail.com",
@@ -22,7 +22,13 @@ export default function Footer(){
   return(
     <div className={"footerStyles"}>
       {links.map((links, index)=>
-        <a className="linkStyles m-2" target="_blank" rel="noopener noreferrer" key={index} href={links.href}><i className={links.icon}></i> {links.text}</a>)}
+        <Link
+            to={{pathname:links.href}}
+            className="linkStyles m-2" 
+            target="_blank"
+            key={index}>
+              <i className={links.icon}></i> {links.text}
+        </Link>)}
 
     </div>
   )
