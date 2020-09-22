@@ -1,6 +1,8 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import { Container } from '@material-ui/core';
 import { HeaderTextLayout } from './items.js';
+import BannerContainer from './Banner.js'; 
+import {ContentContext} from './Reducer/ContentContext.js';
 
 import img1 from '../img/Hawaii1.jpg';
 import img2 from '../img/Hawaii2.jpg';
@@ -34,9 +36,12 @@ export default function PhotoContainer(){
       image:img6,
     }
   }
+  const value = useContext(ContentContext)
+  let Btitle = value.currentContent[0].title;
 
   return(
     <div>
+      <BannerContainer title={Btitle} />
     <Container maxWidth="lg">
       <HeaderTextLayout content={content} title=""/>
     </Container>

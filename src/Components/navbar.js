@@ -1,6 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-
+// import {ContentContext} from './Reducer/ContentContext.js';
 //Navbar section
 export default function Navbar({updateContent}){
     return(
@@ -15,6 +15,7 @@ export default function Navbar({updateContent}){
 }
 // Navitems
 function Navitems({id,text,url}){
+
   return(
     <Link id={id} className="navTabs headerFontStyling m-2" to={url}>
       <li className="m-1">{text}</li>
