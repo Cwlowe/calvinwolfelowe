@@ -62,7 +62,7 @@ export function HeaderTextLayout({content,title}){
       <Grid className="mb-5" container style={{flex: 1,flexDirection: 'row',justifyContent: 'center',alignItems: 'center'}}>
         {Object.keys(content).map((index)=>
         <Grid className="mb-3 HtextContainer" item xs={12} sm={6} md={4} align="center" key={index}>
-          <Link to={content[index].url}>
+          <Link to={content[index].url ? content[index].url : '/404' }>
             <img className="imgPStyle mb-3 mb-lg-0" alt="" src={content[index].image}/>
             {content[index].text !== undefined ? <p className="imgPText">{content[index].text}</p> : null }
           </Link>

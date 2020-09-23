@@ -1,8 +1,8 @@
-import React from 'react';
+import React,{useContext} from 'react';
 import {Link} from 'react-router-dom';
-// import {ContentContext} from './Reducer/ContentContext.js';
+import {ContentContext} from './Reducer/ContentContext.js';
 //Navbar section
-export default function Navbar({updateContent}){
+export default function Navbar(){
     return(
         <ul className="navBarStyle ">
           <Navitems id="0" text="Home" url="/"/>
@@ -15,10 +15,10 @@ export default function Navbar({updateContent}){
 }
 // Navitems
 function Navitems({id,text,url}){
-
+  const context = useContext(ContentContext)
   return(
     <Link id={id} className="navTabs headerFontStyling m-2" to={url}>
-      <li className="m-1">{text}</li>
+      <li className="m-1" onClick={()=>{context.updateContent(id)}}>{text}</li>
     </Link>
       
   );

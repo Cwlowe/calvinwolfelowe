@@ -7,6 +7,7 @@ import HomeContainer from './Home.js';
 import AboutMeContainer from './AboutMe';
 import Blog from './Blog.js';
 import PhotoContainer from './Photography.js';
+import errorPage from './404';
 
 //import AboutmeContainer from './Components/AboutMe.js';
 // import {ContentContext} from './Reducer/ContentContext.js';
@@ -25,6 +26,7 @@ export default function App(){
             <Route path="/aboutme" component={AboutMeContainer}/>
             <Route path="/photography" component={PhotoContainer}/>
             <Route path="/blog" component={Blog}/>
+            <Route path='/404' component={errorPage}/>
           </Switch>
         </div>
       </Router>
