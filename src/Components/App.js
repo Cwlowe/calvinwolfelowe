@@ -7,7 +7,7 @@ import HomeContainer from './Home.js';
 import AboutMeContainer from './AboutMe';
 import Blog from './Blog.js';
 import PhotoContainer from './Photography.js';
-import errorPage from './404';
+import errorPage from './Pages/404';
 
 //import AboutmeContainer from './Components/AboutMe.js';
 // import {ContentContext} from './Reducer/ContentContext.js';
