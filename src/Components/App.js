@@ -1,12 +1,11 @@
 import React from 'react';
 import '../styles/style.css';
 
-
 //Conent
-import HomeContainer from './Home.js';
-import AboutMeContainer from './AboutMe';
-import Blog from './Blog.js';
-import PhotoContainer from './Photography.js';
+import HomeContainer from './Pages/Home';
+import AboutMeContainer from './Pages/AboutMe';
+import Blog from './Pages/Blog';
+import PhotoContainer from './Pages/Photography';
 import errorPage from './Pages/404';
 
 //import AboutmeContainer from './Components/AboutMe.js';

@@ -1,12 +1,12 @@
 import React,{useContext} from 'react';
 import Container from '@material-ui/core/Container';
-import CalPhoto from '../img/20190526-Calvin_profile.jpg';
-import UCSCicon from '../img/UCSC IMAGE.png';
-import {PicTextLayout} from './items.js';
-import {RPicTextLayout} from './items.js';
-import Footer from './Footer.js';
-import BannerContainer from './Banner.js'; 
-import {ContentContext} from './Reducer/ContentContext.js';
+import CalPhoto from '../../img/20190526-Calvin_profile.jpg';
+import UCSCicon from '../../img/UCSC IMAGE.png';
+import {PicTextLayout} from '../Templates/items';
+import {RPicTextLayout} from '../Templates/items';
+import Footer from '../Templates/Footer';
+import BannerContainer from '../Templates/Banner'; 
+import {ContentContext} from '../Reducer/ContentContext';
 
 export default function AboutMeContainer(prop){
   const aboutmeInfo = ["Hello, my name is Calvin. I am currently working as a web developer. I enjoy working on small projects such as this website to showcase my hobbies.",

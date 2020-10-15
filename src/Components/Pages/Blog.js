@@ -1,9 +1,9 @@
 import React,{useContext} from "react";
 import Container from '@material-ui/core/Container'
-import Footer from './Footer';
-import BlogCard from './BlogCard';
-import BannerContainer from './Banner.js'; 
-import {ContentContext} from './Reducer/ContentContext.js';
+import Footer from '../Templates/Footer';
+import BlogCard from '../Templates/BlogCard';
+import BannerContainer from '../Templates/Banner'; 
+import {ContentContext} from '../Reducer/ContentContext';
 
 export default function Blog(){
     const containerStyles = {color:"black"};
@@ -26,11 +26,11 @@ export default function Blog(){
     return(
         <div>
              <BannerContainer title={Btitle} />
-        <Container maxWidth="md">
+        <Container fixed style={{height:"33vh"}}>
             <h1 style={containerStyles} className="headerStyle text-center my-4 ">Under Construction. </h1>
             <div>
-                <BlogCard style={blogStyles} content={blogContent.blog1}></BlogCard>
-                <BlogCard style={blogStyles} content={blogContent.blog2}></BlogCard>
+                {/* <BlogCard style={blogStyles} content={blogContent.blog1}></BlogCard>
+                <BlogCard style={blogStyles} content={blogContent.blog2}></BlogCard> */}
             </div>
         </Container>
         <Footer/>

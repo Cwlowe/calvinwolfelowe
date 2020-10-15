@@ -1,16 +1,16 @@
 import React, {useContext} from 'react';
 import { Container } from '@material-ui/core';
-import { HeaderTextLayout } from './items.js';
-import BannerContainer from './Banner.js'; 
-import {ContentContext} from './Reducer/ContentContext.js';
+import { HeaderTextLayout } from '../Templates/items';
+import BannerContainer from '../Templates/Banner'; 
+import {ContentContext} from '../Reducer/ContentContext';
 
-import img1 from '../img/Hawaii1.jpg';
-import img2 from '../img/Hawaii2.jpg';
-import img3 from '../img/Hawaii3.jpg';
-import img4 from '../img/Hawaii4.jpg';
-import img5 from '../img/Hawaii5.jpg';
-import img6 from '../img/flock-of-birds-917494.jpg';
-import Footer from './Footer.js';
+import img1 from '../../img/Hawaii1.jpg';
+import img2 from '../../img/Hawaii2.jpg';
+import img3 from '../../img/Hawaii3.jpg';
+import img4 from '../../img/Hawaii4.jpg';
+import img5 from '../../img/Hawaii5.jpg';
+import img6 from '../../img/flock-of-birds-917494.jpg';
+import Footer from '../Templates/Footer';
 
 // import Content from '../index.js';
 

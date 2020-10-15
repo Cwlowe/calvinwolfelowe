@@ -1,4 +1,85 @@
-/*Banner Section */
+.HtextContainer {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+/* container styles */
+.containerStyle {
+  border: 1px solid black;
+}
+
+.whiteBack {
+  background: white;
+  border-radius: 5px;
+}
+
+.border {
+  border-left: 3px solid black !important;
+}
+
+.imageResize {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* * * * * * * * *
+  404 error section 
+   * * * * * * * * */
+.errorBox {
+  margin: auto;
+  border: black 2px solid;
+  width: 40%;
+}
+
+.errorBoxContainer {
+  height: 33vh;
+  margin: 5%;
+}
+
+/* * * * * * * *
+  Home section
+  * * * * * * * */
+.homeBack1 {
+  background-color: white;
+}
+
+/* * * * * * * * 
+  Header styles  
+  * * * * * * * */
+.headerStyle {
+  font-size: 70px;
+  color: white;
+  font-family: 'Lobster', cursive;
+  /*border: 2px solid white;*/
+  /* text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; */
+}
+
+/* * * * * * * * 
+font Styles
+ * * * * * * * */
+.textStyling {
+  font-family: 'Roboto', sans-serif;
+  /* font-family: 'Lobster', cursive; */
+}
+
+.headerFontStyling {
+  font-family: 'Roboto', sans-serif;
+  /* font-family: 'Lobster', cursive; */
+}
+
+.h2Styling {
+  font-family: 'Lobster', cursive;
+}
+
+.h1Styling {
+  font-family: 'Lobster', cursive;
+  font-size: 60px;
+}
+
+/* * * * * * * *
+Banner Section 
+ * * * * * * * */
 .bannerStyles {
   background-color: #94a5c4;
   background-image: url("../img/clouds-conifer-daylight-environment-629162.jpg");
@@ -7,40 +88,9 @@
   height: 60%;
 }
 
-/* Nav bar styles */
-.navBarStyle {
-  list-style-type: none;
-  text-align: left !important;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.navTabs:active {
-  color: white;
-}
-
-.navTabs {
-  border-radius: 5px;
-  border: 2px solid black;
-  color: black;
-}
-
-.navTabs:focus {
-  background-color: #000000;
-  color: white;
-  outline: none;
-}
-
-.active a {
-  background-color: white !important;
-}
-
-.nav-link {
-  color: white;
-}
-
-/*footer*/
+/* * * * * * * *
+Footer Section
+* * * * * * * */
 .linkStyles {
   color: white;
 }
@@ -61,38 +111,12 @@
   bottom: 0;
   height: 60px;
   width: 100%;
+  margin-top: 10%;
 }
 
-/* Header styles */
-.headerStyle {
-  font-size: 70px;
-  color: white;
-  font-family: 'Lobster', cursive;
-  /*border: 2px solid white;*/
-  /* text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; */
-}
-
-/* font Styles*/
-.textStyling {
-  font-family: 'Roboto', sans-serif;
-  /* font-family: 'Lobster', cursive; */
-}
-
-.headerFontStyling {
-  font-family: 'Roboto', sans-serif;
-  /* font-family: 'Lobster', cursive; */
-}
-
-.h2Styling {
-  font-family: 'Lobster', cursive;
-}
-
-.h1Styling {
-  font-family: 'Lobster', cursive;
-  font-size: 60px;
-}
-
-/** images styling **/
+/* * * * * * * *
+Images Styling  
+* * * * * * * */
 .imgStyling {
   border-radius: 10%;
   border: 2px solid black;
@@ -132,48 +156,45 @@
   color: white;
 }
 
-.HtextContainer {
-  position: relative;
-  text-align: center;
+/* * * * * * * *
+Nav bar styles 
+* * * * * * * */
+.navBarStyle {
+  list-style-type: none;
+  text-align: left !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 0;
+}
+
+.navTabs:active {
   color: white;
 }
 
-/* container styles */
-.containerStyle {
-  border: 1px solid black;
-}
-
-.whiteBack {
-  background: white;
+.navTabs {
   border-radius: 5px;
+  border: 2px solid black;
+  color: black;
 }
 
-.border {
-  border-left: 3px solid black !important;
+.navTabs:focus {
+  background-color: #000000;
+  color: white;
+  outline: none;
 }
 
-.imageResize {
-  max-width: 100%;
-  max-height: 100%;
+.active a {
+  background-color: white !important;
 }
 
-/*404 error section */
-.errorBox {
-  margin: auto;
-  border: black 2px solid;
-  width: 40%;
-  height: 100%;
+.nav-link {
+  color: white;
 }
 
-/* Home section*/
-.homeBack1 {
-  background-color: white;
-}
-
-/* .imgContainercenter{
-    align-self: 'center';
-  } */
-/* Media query from Mobile viewport 424.999px and below */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * 
+  Media query from Mobile viewport 424.999px and below 
+  * * * * * * * * * * * * * * * * * * * * * * * * * * */
 @media screen and (max-width: 424.999px) {
   /* Changing the header size to 30px on mobile*/
   .headerStyle {
@@ -186,7 +207,27 @@
   }
 }
 
-/* Media query from Tablet viewport 425px to 1023.999px*/
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * 
+  Media query from Mobile and Tablet viewport 767.999px and below 
+  * * * * * * * * * * * * * * * * * * * * * * * * * * */
+@media screen and (max-width: 767.999px) {
+  .errorBox {
+    width: 100%;
+  }
+  .errorBoxContainer {
+    height: 45%;
+  }
+  .navTabs {
+    font-size: 14px;
+  }
+  .imgPText {
+    font-size: 20px;
+  }
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * 
+  Media query from Tablet viewport 425px to 1023.999px*
+  * * * * * * * * * * * * * * * * * * * * * * * * * * */
 @media (min-width: 425px) and (max-width: 1023.999px) {
   .imgPStyle {
     width: 200px;

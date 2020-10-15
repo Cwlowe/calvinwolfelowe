@@ -1,6 +1,6 @@
 import React,{useContext} from 'react';
 import {Link} from 'react-router-dom';
-import {ContentContext} from './Reducer/ContentContext.js';
+import {ContentContext} from '../Reducer/ContentContext';
 //Navbar section
 export default function Navbar(){
     return(

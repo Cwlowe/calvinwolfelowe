@@ -1,9 +1,9 @@
 import React, {useState, createContext} from 'react';
 
-import PhotoContainer from '../Photography.js';
-import HomeContainer from '../Home.js';
-import AboutMeContainer from '../AboutMe.js';
-import Blog from '../Blog.js';
+import PhotoContainer from '../Pages/Photography';
+import HomeContainer from '../Pages/Home';
+import AboutMeContainer from '../Pages/AboutMe';
+import Blog from '../Pages/Blog';
 
 export const ContentContext = createContext();
 

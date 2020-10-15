@@ -1,6 +1,6 @@
 import React from 'react'
-import Navbar from './navbar.js';
-import Header from './items.js';
+import Navbar from './navbar';
+import Header from './items';
 import { Container } from '@material-ui/core';
 
 export default function BannerContainer({title, updateContent}){

@@ -1,12 +1,12 @@
 import React,{useContext} from 'react';
 import Container from '@material-ui/core/Container';
-import {HeaderTextLayout} from './items.js';
-import img1 from "../img/20191020-Aboutme.jpg";
-import img2 from "../img/Photography.jpg";
-import img3 from "../img/blog.jpg";
-import Footer from './Footer.js';
-import BannerContainer from './Banner.js'; 
-import {ContentContext} from './Reducer/ContentContext.js';
+import {HeaderTextLayout} from '../Templates/items';
+import img1 from "../../img/20191020-Aboutme.jpg";
+import img2 from "../../img/Photography.jpg";
+import img3 from "../../img/blog.jpg";
+import Footer from '../Templates/Footer';
+import BannerContainer from '../Templates/Banner'; 
+import {ContentContext} from '../Reducer/ContentContext';
 
 //Home Section
 export default function HomeContainer(){
@@ -34,7 +34,7 @@ export default function HomeContainer(){
       <div>
         <BannerContainer title={Btitle} />
       <Container className="p-0 homeBack1" maxWidth="lg">
-          <HeaderTextLayout content={content} title="Hello!"/>
+          <HeaderTextLayout content={content}/>
       </Container>
       <Footer/>
       </div>
