@@ -111,7 +111,7 @@ Footer Section
   bottom: 0;
   height: 60px;
   width: 100%;
-  margin-top: 10%;
+  margin-top: 5%;
 }
 
 /* * * * * * * *
@@ -174,8 +174,12 @@ Nav bar styles
 
 .navTabs {
   border-radius: 5px;
-  border: 2px solid black;
-  color: black;
+  border: 2px solid #094074;
+  color: #094074;
+  background: white;
+  margin: 2% 1% 15% 5%;
+  width: 15%;
+  text-align: center;
 }
 
 .navTabs:focus {
@@ -205,6 +209,9 @@ Nav bar styles
     width: 150px;
     height: 150px;
   }
+  .navTabs {
+    margin: 2% 1% 1% 5%;
+  }
 }
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * 
@@ -218,6 +225,7 @@ Nav bar styles
     height: 45%;
   }
   .navTabs {
+    margin: 2% 1% 4% 5%;
     font-size: 14px;
   }
   .imgPText {

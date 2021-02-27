@@ -1,7 +1,27 @@
 import React, {useState} from 'react';
-
+import {makeStyles} from '@material-ui/core';
+const useStyles = makeStyles({
+  linkStyles:{
+    color: "white",
+    margin: "2px 2px 2px 2px"
+  },
+  footer:{
+    color: "white",
+  },
+  footerStyles:{
+    backgroundColor: "#313742",
+    borderTop: "1px solid #E7E7E7",
+    padding: "20px",
+    position: "static",
+    left:"0",
+    bottom: "0",
+    height: "60px",
+    width: "100%",
+    marginTop: "5%",
+  }
+})
 export default function Footer(){
-  
+  const classes = useStyles();
   const [links] =useState([
     {
       href: "mailto:calvinwolfelowe@gmail.com",
@@ -20,9 +40,9 @@ export default function Footer(){
     }
   ]);
   return(
-    <div className={"footerStyles"}>
+    <div className={classes.footerStyles}>
       {links.map((links, index)=>
-        <a className="linkStyles m-2" target="_blank" rel="noopener noreferrer" key={index} href={links.href}><i className={links.icon}></i> {links.text}</a>)}
+        <a className={classes.linkStyles} target="_blank" rel="noopener noreferrer" key={index} href={links.href}><i className={links.icon}></i> {links.text}</a>)}
 
     </div>
   )
