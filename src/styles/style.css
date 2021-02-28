@@ -80,13 +80,13 @@ font Styles
 /* * * * * * * *
 Banner Section 
  * * * * * * * */
-.bannerStyles {
+/* .bannerStyles {
   background-color: #94a5c4;
   background-image: url("../img/clouds-conifer-daylight-environment-629162.jpg");
   background-repeat: space;
   background-size: cover;
   height: 60%;
-}
+} */
 
 /* * * * * * * *
 Footer Section

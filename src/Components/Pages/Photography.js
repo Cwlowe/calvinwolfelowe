@@ -4,12 +4,6 @@ import { HeaderTextLayout } from '../Templates/items';
 import BannerContainer from '../Templates/Banner'; 
 import {ContentContext} from '../Reducer/ContentContext';
 
-import img1 from '../../img/Hawaii1.jpg';
-import img2 from '../../img/Hawaii2.jpg';
-import img3 from '../../img/Hawaii3.jpg';
-import img4 from '../../img/Hawaii4.jpg';
-import img5 from '../../img/Hawaii5.jpg';
-import img6 from '../../img/flock-of-birds-917494.jpg';
 import Footer from '../Templates/Footer';
 
 // import Content from '../index.js';
@@ -18,22 +12,22 @@ import Footer from '../Templates/Footer';
 export default function PhotoContainer(){
   const content = {
     0:{
-      image:img1,
+      image:"/img/Hawaii1.jpg",
     },
     1:{
-      image:img2,
+      image:"/img/Hawaii2.jpg",
     },
     2:{
-      image:img3,
+      image:'/img/Hawaii3.jpg',
     },
     3:{
-      image:img4,
+      image:'/img/Hawaii4.jpg',
     },
     4:{
-      image:img5,
+      image:'/img/Hawaii5.jpg',
     },
     5:{
-      image:img6,
+      image:'/img/flock-of-birds-917494.jpg',
     }
   }
   const value = useContext(ContentContext)

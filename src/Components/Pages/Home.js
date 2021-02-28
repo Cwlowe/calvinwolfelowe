@@ -1,9 +1,6 @@
 import React,{useContext} from 'react';
 import Container from '@material-ui/core/Container';
 import {HeaderTextLayout} from '../Templates/items';
-import img1 from "../../img/20191020-Aboutme.jpg";
-import img2 from "../../img/Photography.jpg";
-import img3 from "../../img/blog.jpg";
 import Footer from '../Templates/Footer';
 import BannerContainer from '../Templates/Banner'; 
 import {ContentContext} from '../Reducer/ContentContext';
@@ -12,17 +9,17 @@ import {ContentContext} from '../Reducer/ContentContext';
 export default function HomeContainer(){
   const content = {
     0:{
-      image: img1,
+      image: "/img/20191020-Aboutme.jpg",
       text: "About me",
       url:"/aboutme"
     },
     1:{
-      image: img2,
+      image: "/img/Photography.jpg",
       text:"Photography",
       url:"/photography"
     },
     2:{
-      image: img3,
+      image: "/img/blog.jpg",
       text:"Blogs",
       url:"/blog"
     }

@@ -1,7 +1,5 @@
 import React,{useContext} from 'react';
 import Container from '@material-ui/core/Container';
-import CalPhoto from '../../img/20190526-Calvin_profile.jpg';
-import UCSCicon from '../../img/UCSC IMAGE.png';
 import {PicTextLayout} from '../Templates/items';
 import {RPicTextLayout} from '../Templates/items';
 import Footer from '../Templates/Footer';
@@ -20,8 +18,8 @@ const value = useContext(ContentContext);
       <div>
         <BannerContainer title={Btitle} />
         <Container fixed className="p-0" maxWidth="md">
-          <PicTextLayout text={aboutmeInfo} imgsrc={CalPhoto} />
-          <RPicTextLayout text={collegeInfo} imgsrc={UCSCicon} />
+          <PicTextLayout text={aboutmeInfo} imgsrc={'/img/20190526-Calvin_profile.jpg'} />
+          <RPicTextLayout text={collegeInfo} imgsrc={'/img/UCSC IMAGE.png'} />
       </Container>
       <Footer/>
       </div>
