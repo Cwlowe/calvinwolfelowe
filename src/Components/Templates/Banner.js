@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import Navbar from './navbar';
 import Header from './items';
 import { Container, makeStyles } from '@material-ui/core';
