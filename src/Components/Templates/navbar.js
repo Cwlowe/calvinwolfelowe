@@ -19,6 +19,7 @@ export default function Navbar(){
 }
 // Navitems
 function Navitems({id,text,url}){
+
   const context = useContext(ContentContext);
   return(
     <Link id={id} className="navTabs headerFontStyling" to={url}>
@@ -27,4 +28,3 @@ function Navitems({id,text,url}){
       
   );
 }
-

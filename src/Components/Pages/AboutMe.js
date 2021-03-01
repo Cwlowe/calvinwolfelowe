@@ -6,7 +6,7 @@ import Footer from '../Templates/Footer';
 import BannerContainer from '../Templates/Banner'; 
 import {ContentContext} from '../Reducer/ContentContext';
 
-export default function AboutMeContainer(prop){
+export default function AboutMeContainer(){
   const aboutmeInfo = ["Hello, my name is Calvin. I am currently working as a web developer. I enjoy working on small projects such as this website to showcase my hobbies.",
   "Some of the hobbies I enjoy are hiking, fishing, and photography. I hope you enjoy my site and leave any feedback to my email. Thank you.",
   ];
