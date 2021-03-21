@@ -3,7 +3,7 @@ import {makeStyles} from '@material-ui/core';
 const useStyles = makeStyles({
   linkStyles:{
     color: "white",
-    margin: "2px 2px 2px 2px"
+    margin: "2px 10px 2px 10px"
   },
   footer:{
     color: "white",

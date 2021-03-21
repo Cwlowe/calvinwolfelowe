@@ -1,12 +1,9 @@
 import React,{useContext} from 'react';
 import {Link} from 'react-router-dom';
 import {ContentContext} from '../Reducer/ContentContext';
-import useDeviceDetect from '../utils/deviceDetect'
 
 //Navbar section
 export default function Navbar(){
-    const {isMobile} = useDeviceDetect();
-    console.log(isMobile)
     return(
         <ul className="navBarStyle ">
           <Navitems id="0" text="Home" url="/"/>

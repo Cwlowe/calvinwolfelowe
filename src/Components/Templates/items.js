@@ -51,6 +51,7 @@ export function RPicTextLayout({text,imgsrc}){
 }
 
 export function HeaderTextLayout({content,title}){
+  console.log(content)
   return(
     <Container fixed >
       <Grid container >
@@ -73,10 +74,3 @@ export function HeaderTextLayout({content,title}){
   );
 }
 
-export function BlogTextLayout(){
-  return(
-    <div>
-      
-    </div>
-  )
-}
