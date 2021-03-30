@@ -9,5 +9,6 @@ storage.rules
 firebase.json
 database.rules.json
 remoteconfig.template.json
+.firebase
 
 /Components/Test/
