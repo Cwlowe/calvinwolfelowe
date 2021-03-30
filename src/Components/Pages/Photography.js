@@ -11,7 +11,7 @@ import Footer from '../Templates/Footer';
 // import Content from '../index.js';
 
 //Photography Section
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme)=>({
   imgCont:{
     flex:"1",
     flexDirection:"row",
@@ -22,10 +22,19 @@ const useStyles = makeStyles({
   loadingText:{
     fontFamily: "Lobster",
     marginBottom:"10%",
-    fontSize:"30px"
+    fontSize:"30px",
+    [theme.breakpoints.down("md")]:{
+      marginBottom:"28%",
+      fontSize:"12px",
+    },
+    [theme.breakpoints.down('sm')]:{
+      marginBottom:"35%",
+      fontSize:"20px",
+    }
+
   }
 
-})
+}))
 export default function PhotoContainer(){
   let classes = useStyles()
   let dispatch = useDispatch()
