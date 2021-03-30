@@ -1,10 +1,9 @@
-import React,{useContext} from 'react';
+import React from 'react';
 import Container from '@material-ui/core/Container';
 import {PicTextLayout} from '../Templates/items';
 import {RPicTextLayout} from '../Templates/items';
 import Footer from '../Templates/Footer';
-import BannerContainer from '../Templates/Banner'; 
-import {ContentContext} from '../Reducer/ContentContext';
+import BannerContainer from '../Templates/Banner';
 
 export default function AboutMeContainer(){
   const aboutmeInfo = ["Hello, my name is Calvin. I am currently working as a web developer. I enjoy working on small projects such as this website to showcase my hobbies.",
@@ -12,11 +11,10 @@ export default function AboutMeContainer(){
   ];
   const collegeInfo = ["I graduated from Univeristy of California Santa Cruz with a BS in computer science. You can check out more of my projects that I have worked on through my github.",
 ""];
-const value = useContext(ContentContext);
-  let Btitle = value.currentContent[0].title;
+
     return(
       <div>
-        <BannerContainer title={Btitle} />
+        <BannerContainer title={"About Me"} />
         <Container fixed className="p-0" maxWidth="md">
           <PicTextLayout text={aboutmeInfo} imgsrc={'/img/20190526-Calvin_profile.jpg'} />
           <RPicTextLayout text={collegeInfo} imgsrc={'/img/UCSC IMAGE.png'} />

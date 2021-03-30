@@ -19,14 +19,12 @@ var get_Storage_image = function get_Storage_image() {
   storageRef.listAll().then(function (res) {
     res.items.forEach(function (item) {
       storageRef.child(item.name).getDownloadURL().then(function (url) {
-        console.log(url);
         images.push(url);
       });
     });
   })["catch"](function (err) {
     console.log(err);
   });
-  console.log("in storage.js", images);
   return images;
 };
 

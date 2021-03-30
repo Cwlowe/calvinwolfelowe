@@ -1,9 +1,8 @@
-import React,{useContext} from "react";
+import React from "react";
 import Container from '@material-ui/core/Container'
 import Footer from '../Templates/Footer';
 // import BlogCard from '../Templates/BlogCard';
-import BannerContainer from '../Templates/Banner'; 
-import {ContentContext} from '../Reducer/ContentContext';
+import BannerContainer from '../Templates/Banner';
 
 export default function Blog(){
     const containerStyles = {color:"black"};
@@ -21,11 +20,9 @@ export default function Blog(){
     //         paragraph:"Contents of the card"
     //     }
     // }
-    const value = useContext(ContentContext);
-    let Btitle = value.currentContent[0].title;
     return(
         <div>
-             <BannerContainer title={Btitle} />
+             <BannerContainer title={"Blog"} />
         <Container fixed style={{height:"33vh"}}>
             <h1 style={containerStyles} className="headerStyle text-center my-4 ">Under Construction. </h1>
             <div>

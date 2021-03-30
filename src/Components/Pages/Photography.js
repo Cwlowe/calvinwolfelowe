@@ -1,8 +1,11 @@
-import React, { useEffect,useState} from 'react';
+import React, { useEffect, useState} from 'react';
+import {useDispatch, useSelector} from 'react-redux'
 import { Container, Grid, makeStyles } from '@material-ui/core';
-import BannerContainer from '../Templates/Banner'; 
-// import {ContentContext} from '../Reducer/ContentContext';
-import {get_Storage_image} from '../../Api/google_storage.js';
+import BannerContainer from '../Templates/Banner';
+
+// import {get_Storage_image} from '../../Api/google_storage.js';
+//redux
+import {fetchPhotos} from "../Store/photography_reducer"
 import Footer from '../Templates/Footer';
 
 // import Content from '../index.js';
@@ -15,35 +18,44 @@ const useStyles = makeStyles({
     justifyContent: 'center',
     alignItems: 'center',
     marginTop:"10%",
+  },
+  loadingText:{
+    fontFamily: "Lobster",
+    marginBottom:"10%",
+    fontSize:"30px"
   }
+
 })
 export default function PhotoContainer(){
-  
-  let [images, setImages] = useState([])
   let classes = useStyles()
+  let dispatch = useDispatch()
+  let photos = useSelector(state => state.state.photos)
+  let [isVisible, setVisible] = useState(false)
 
   useEffect(()=>{
-    const getData = async ()=>{
-      let images = await get_Storage_image()
-      setImages(images)
+    const getData = async()=>{
+      await dispatch(fetchPhotos())
+      setTimeout(()=>{
+        setVisible(true);
+      },1000) 
     }
     getData()
-    
-  },[])
-  // const value = useContext(ContentContext)
-  // let Btitle = value.currentContent[0].title;
-  console.log(images)
+  },[dispatch])
+
+  console.log(photos)
   return(
     <div>
       <BannerContainer title={"Photography"} />
     <Container maxWidth="lg">
       <Container fixed >
         <Grid className={classes.imgCont} container>
-          {images.map((url,index)=>
+          {isVisible ? photos.map((url,index)=>
           <Grid className="mb-3 HtextContainer" item xs={12} sm={6} md={4} align="center" key={index}>
               <img className="imgPStyle mb-3 mb-lg-0" alt="" src={url}/>
           </Grid>
-          )}
+          )
+          :<p className={classes.loadingText}>Loading Images ...</p>
+          }
         </Grid>
       </Container>
     </Container>
