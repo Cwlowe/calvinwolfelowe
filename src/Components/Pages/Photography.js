@@ -51,7 +51,6 @@ export default function PhotoContainer(){
     getData()
   },[dispatch])
 
-  console.log(photos)
   return(
     <div>
       <BannerContainer title={"Photography"} />

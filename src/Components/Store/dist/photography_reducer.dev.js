@@ -4,7 +4,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports["default"] = workoutReducer;
-exports.fetchPhotos = void 0;
+exports.fetchPhoto = exports.fetchPhotos = void 0;
 
 var _google_storage = require("../../Api/google_storage");
 
@@ -14,14 +14,22 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
-var SET_PHOTOS = 'SET_PHOTOS'; //Initial State
+var SET_PHOTOS = 'SET_PHOTOS';
+var GET_PHOTO = 'GET_PHOTO'; //Initial State
 
 var initialState = {}; //Action Creators
 
-var setWorkouts = function setWorkouts(photos) {
+var setPhotos = function setPhotos(photos) {
   return {
     type: SET_PHOTOS,
     photos: photos
+  };
+};
+
+var getPhoto = function getPhoto(photoURL) {
+  return {
+    type: GET_PHOTO,
+    photoURL: photoURL
   };
 };
 
@@ -33,8 +41,8 @@ var fetchPhotos = function fetchPhotos() {
         switch (_context.prev = _context.next) {
           case 0:
             try {
-              photos = (0, _google_storage.get_Storage_image)();
-              dispatch(setWorkouts(photos));
+              photos = (0, _google_storage.get_Storage_images)();
+              dispatch(setPhotos(photos));
             } catch (err) {
               console.log(err);
             }
@@ -46,10 +54,43 @@ var fetchPhotos = function fetchPhotos() {
       }
     });
   };
+};
+
+exports.fetchPhotos = fetchPhotos;
+
+var fetchPhoto = function fetchPhoto(location) {
+  return function _callee2(dispatch) {
+    var imageurl;
+    return regeneratorRuntime.async(function _callee2$(_context2) {
+      while (1) {
+        switch (_context2.prev = _context2.next) {
+          case 0:
+            _context2.prev = 0;
+            _context2.next = 3;
+            return regeneratorRuntime.awrap((0, _google_storage.get_Storage_image)(location));
+
+          case 3:
+            imageurl = _context2.sent;
+            dispatch(getPhoto(imageurl));
+            _context2.next = 10;
+            break;
+
+          case 7:
+            _context2.prev = 7;
+            _context2.t0 = _context2["catch"](0);
+            console.log(_context2.t0);
+
+          case 10:
+          case "end":
+            return _context2.stop();
+        }
+      }
+    }, null, null, [[0, 7]]);
+  };
 }; //Reducer
 
 
-exports.fetchPhotos = fetchPhotos;
+exports.fetchPhoto = fetchPhoto;
 
 function workoutReducer() {
   var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : initialState;
@@ -59,6 +100,11 @@ function workoutReducer() {
     case SET_PHOTOS:
       return _objectSpread({}, state, {
         photos: action.photos
+      });
+
+    case GET_PHOTO:
+      return _objectSpread({}, state, {
+        photoURL: action.photoURL
       });
 
     default:
