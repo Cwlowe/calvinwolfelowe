@@ -51,7 +51,6 @@ export function RPicTextLayout({text,imgsrc}){
 }
 
 export function HeaderTextLayout({content,title}){
-  console.log(content)
   return(
     <Container fixed >
       <Grid container >

@@ -7,23 +7,20 @@ import AboutMeContainer from './Pages/AboutMe';
 import Blog from './Pages/Blog';
 import PhotoContainer from './Pages/Photography';
 import errorPage from './Pages/404';
-
-//import AboutmeContainer from './Components/AboutMe.js';
-// import {ContentContext} from './Reducer/ContentContext.js';
-import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import { BrowserRouter as Router , Switch, Route} from 'react-router-dom';
 
 //Content section
 export default function App(){
-  
+  console.log(process.env.PUBLIC_URL)
   return(
-      <Router basename={process.env.PUBLIC_URL}>
+      <Router>
         <div className="tab-content" id="tabContent">
           <Switch>
             <Route path="/" exact component={HomeContainer} />
             <Route path="/aboutme" component={AboutMeContainer}/>
-            <Route path="/photography" component={PhotoContainer}/>
+            <Route path="/photography" exact component={PhotoContainer}/>
             <Route path="/blog" component={Blog}/>
-            <Route path='/404' component={errorPage}/>
+            <Route component={errorPage}/>
           </Switch>
         </div>
       </Router>
