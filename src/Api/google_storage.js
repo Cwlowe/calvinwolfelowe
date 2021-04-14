@@ -1,4 +1,4 @@
-import firebase from "./firebase.js"
+import firebase from './firebase.js';
 import "firebase/storage";
 
 export const get_Storage_images = ()=>{

@@ -12,3 +12,7 @@ remoteconfig.template.json
 .firebase
 build/
 /Components/Test/
+
+#gatsby
+.cache/
+dist/
