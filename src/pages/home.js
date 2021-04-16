@@ -9,7 +9,8 @@ import Grid from '@material-ui/core/Grid';
 import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
-
+//CSS
+import * as container from "../styles/container.module.css";
 //Home Section
 const HomeContainer= ()=>{
   const data = useStaticQuery(graphql`
@@ -22,44 +23,29 @@ const HomeContainer= ()=>{
           id
           base
           childImageSharp {
-            fluid(fit: CONTAIN) {
+            fluid(fit: COVER,maxWidth: 200, maxHeight: 200) {
               ...GatsbyImageSharpFluid_withWebp
             }
+            gatsbyImageData(height: 200, width: 200)
           }
         }
       }
     }
   }
 `)
-  const content = {
-    0:{
-      image: "./20191020-Aboutme.jpg",
-      text: "About me",
-      url:"/aboutme"
-    },
-    1:{
-      image: "../images/Photography.jpg",
-      text:"Photography",
-      url:"/photography"
-    },
-    2:{
-      image: "../imgages/blog.jpg",
-      text:"Blogs",
-      url:"/blog"
-    }
-  };
   //Tapping into the context reducer
   // const value = useContext(ContentContext);
   // let Btitle = value.currentContent[0].title;
     return(
       <div>
         {/* <BannerContainer title={"Home"} /> */}
-        <Container className="p-0 homeBack1" maxWidth="lg">
-        <Grid className="" container style={{flex: 1,flexDirection: 'row',justifyContent: 'center',alignItems: 'center'}}>
+        <Container className={container.section} maxWidth="lg">
+        <Grid className={container.imageCardContainer} container spacing={4}>
           {data?
               data.homePhoto.edges.map((image) => (
-                <Grid className="hello" item xs={12} sm={6} md={4} align="center" key = {image.node.id}>
-                  <Img 
+                <Grid className={container.imageCard} item xs={12} sm={3} md={4} key = {image.node.id}>
+                  <Img
+                  className={container.image}
                     alt={image.node.base} 
                     fluid={image.node.childImageSharp.fluid}
                   />
