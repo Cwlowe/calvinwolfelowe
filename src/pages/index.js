@@ -12,12 +12,12 @@ import store from '../store';
 import {Provider} from 'react-redux'
 
 // import {ContentProvider} from './Components/Reducer/ContentContext.js';
-function Index(){
+function Index(props){
 
     return(
     <Provider store={store}>
         <div className="tab-content" id="tabContent">
-          <Home/>
+          <Home props={props}/>
         </div>
     </Provider>    
     

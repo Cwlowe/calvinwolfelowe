@@ -5,8 +5,8 @@ import {RPicTextLayout} from '../templates/items';
 import Footer from '../templates/Footer';
 import BannerContainer from '../templates/Banner';
 //images
-import image1 from "../images/20190526-Calvin_profile.jpg";
-import image2 from "../images/UCSC IMAGE.png";
+// import image1 from "../images/20190526-Calvin_profile.jpg";
+// import image2 from "../images/UCSC IMAGE.png";
 
 export default function AboutMeContainer(){
   const aboutmeInfo = ["Hello, my name is Calvin. I am currently working as a web developer. I enjoy working on small projects such as this website to showcase my hobbies.",
@@ -19,8 +19,8 @@ export default function AboutMeContainer(){
       <div>
         <BannerContainer title={"About Me"} />
         <Container fixed className="p-0" maxWidth="md">
-          <PicTextLayout text={aboutmeInfo} imgsrc={image1} />
-          <RPicTextLayout text={collegeInfo} imgsrc={image2} />
+          {/* <PicTextLayout text={aboutmeInfo} imgsrc={image1} />
+          <RPicTextLayout text={collegeInfo} imgsrc={image2} /> */}
       </Container>
       <Footer/>
       </div>
