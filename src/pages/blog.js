@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import Container from '@material-ui/core/Container'
-import Footer from '../templates/Footer';
+import Footer from '../components/footer';
 // import BlogCard from '../Templates/BlogCard';
-import BannerContainer from '../templates/Banner';
+import BannerContainer from '../components/banner';
 import { makeStyles } from "@material-ui/core";
 import {fetchPhoto} from "../store/photography_reducer";
 import { useDispatch, useSelector } from "react-redux";

@@ -5,6 +5,7 @@
   "homepage": "https://www.calvinwolfelowe.com",
   "dependencies": {
     "@material-ui/core": "^4.10.1",
+    "babel-eslint": "^10.1.0",
     "firebase": "^8.4.1",
     "gatsby": "^3.2.1",
     "gatsby-image": "^3.3.0",

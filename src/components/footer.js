@@ -20,7 +20,7 @@ const useStyles = makeStyles({
     marginTop: "5%",
   }
 })
-export default function Footer(){
+const Footer=()=>{
   const classes = useStyles();
   const [links] =useState([
     {
@@ -47,3 +47,5 @@ export default function Footer(){
     </div>
   )
 }
+
+export default Footer;

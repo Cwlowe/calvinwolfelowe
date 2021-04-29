@@ -1,14 +1,14 @@
 import React from 'react';
 import Container from '@material-ui/core/Container';
-import Footer from '../templates/Footer';
-import BannerContainer from '../templates/Banner';
+import Footer from './footer';
+import Banner from './banner';
 
 //Material-ui
 import Grid from '@material-ui/core/Grid';
 //Gatsby
 import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
-import { GatsbyImage, getImage } from "gatsby-plugin-image";
+// import { GatsbyImage, getImage } from "gatsby-plugin-image";
 //CSS
 import * as container from "../styles/container.module.css";
 //Home Section
@@ -38,7 +38,7 @@ const HomeContainer= ()=>{
   // let Btitle = value.currentContent[0].title;
     return(
       <div>
-        {/* <BannerContainer title={"Home"} /> */}
+        <Banner title={"Home"} />
         <Container className={container.section} maxWidth="lg">
         <Grid className={container.imageCardContainer} container spacing={4}>
           {data?
@@ -46,7 +46,7 @@ const HomeContainer= ()=>{
                 <Grid className={container.imageCard} item xs={12} sm={3} md={4} key = {image.node.id}>
                   <Img
                   className={container.image}
-                    alt={image.node.base} 
+                    alt={image.node.base.slice(0,-4)} 
                     fluid={image.node.childImageSharp.fluid}
                   />
                 </Grid> 

@@ -1,6 +1,6 @@
 import React from 'react'
-import BannerContainer from '../templates/Banner'; 
-import Footer from '../templates/Footer';
+import BannerContainer from '../components/banner'; 
+import Footer from '../components/footer';
 // import PageContainer from './Containers/pageLayout';
 
 const errorPage = ()=>{

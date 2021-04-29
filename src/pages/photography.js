@@ -1,12 +1,12 @@
 import React, { useEffect, useState} from 'react';
 import {useDispatch, useSelector} from 'react-redux'
 import { Container, Grid, makeStyles } from '@material-ui/core';
-import BannerContainer from '../templates/Banner';
+import BannerContainer from '../components/banner';
 import Img from "react-cool-img";
 
 //redux
 import {fetchPhotos} from "../store/photography_reducer"
-import Footer from '../templates/Footer';
+import Footer from '../components/footer';
 
 // import Content from '../index.js';
 

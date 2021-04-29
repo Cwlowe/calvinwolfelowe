@@ -1,7 +1,7 @@
 import React from 'react';
 // import ReactDOM from 'react-dom';
 // //Content
-import Home from './home';
+import Home from '../components/home';
 // import AboutMeContainer from './AboutMe';
 // import Blog from './Blog';
 // import PhotoContainer from './Photography';

@@ -1,9 +1,9 @@
 import React from 'react';
 import Container from '@material-ui/core/Container';
-import {PicTextLayout} from '../templates/items';
-import {RPicTextLayout} from '../templates/items';
-import Footer from '../templates/Footer';
-import BannerContainer from '../templates/Banner';
+import {PicTextLayout} from '../components/items';
+import {RPicTextLayout} from '../components/items';
+import Footer from '../components/footer';
+import Banner from '../components/banner';
 //images
 // import image1 from "../images/20190526-Calvin_profile.jpg";
 // import image2 from "../images/UCSC IMAGE.png";
@@ -17,7 +17,7 @@ export default function AboutMeContainer(){
 
     return(
       <div>
-        <BannerContainer title={"About Me"} />
+        <Banner title={"About Me"} />
         <Container fixed className="p-0" maxWidth="md">
           {/* <PicTextLayout text={aboutmeInfo} imgsrc={image1} />
           <RPicTextLayout text={collegeInfo} imgsrc={image2} /> */}
