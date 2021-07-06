@@ -42,12 +42,13 @@ export default function Banner({title, updateContent}){
     `)
     const image = data ? data.banner.edges[0].node.childImageSharp.fluid : ""
     return(
-        <div className={classes.bannerStyles}>
+        <div>
+            <Navbar updateContent={updateContent}/>
             <Img
             className={styles.image}
             fluid={image}
             >
-            <Navbar updateContent={updateContent}/>
+            
             <Header title={title}/>
             </Img>
         </div>
