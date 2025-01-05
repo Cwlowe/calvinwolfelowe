@@ -1,0 +1,24 @@
+
+/* Image cards */
+.imageCardContainer{
+    display:flex;
+    justify-content:center;
+
+    border-radius:5;
+}
+
+.imageCard{
+    padding:10%;
+}
+
+.image{
+    max-height:200px;
+    max-width:200px;
+}
+
+/* Section */
+
+.section{
+    margin-top:10%;
+    height:100%
+}

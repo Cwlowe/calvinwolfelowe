@@ -1,0 +1,325 @@
+html{
+  height:100%;
+}
+.HtextContainer {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+/* container styles */
+.containerStyle {
+  border: 1px solid black;
+}
+
+.whiteBack {
+  background: white;
+  border-radius: 5px;
+}
+
+.border {
+  border-left: 3px solid black !important;
+}
+
+.imageResize {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* * * * * * * * *
+  404 error section 
+   * * * * * * * * */
+.errorBox {
+  margin: auto;
+  border: black 2px solid;
+  width: 40%;
+}
+
+.errorBoxContainer {
+  height: 33vh;
+  margin: 5%;
+}
+
+/* * * * * * * *
+  Home section
+  * * * * * * * */
+.homeBack1 {
+  background-color: white;
+}
+
+/* * * * * * * * 
+  Header styles  
+  * * * * * * * */
+.headerStyle {
+  font-size: 70px;
+  color: white;
+  font-family: 'Lobster', cursive;
+  /*border: 2px solid white;*/
+  /* text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; */
+}
+
+/* * * * * * * * 
+font Styles
+ * * * * * * * */
+.textStyling {
+  font-family: 'Roboto', sans-serif;
+  /* font-family: 'Lobster', cursive; */
+}
+
+.headerFontStyling {
+  font-family: 'Roboto', sans-serif;
+  /* font-family: 'Lobster', cursive; */
+}
+
+.h2Styling {
+  font-family: 'Lobster', cursive;
+}
+
+.h1Styling {
+  font-family: 'Lobster', cursive;
+  font-size: 60px;
+}
+
+/* * * * * * * *
+Banner Section 
+ * * * * * * * */
+/* .bannerStyles {
+  background-color: #94a5c4;
+  background-image: url("../img/clouds-conifer-daylight-environment-629162.jpg");
+  background-repeat: space;
+  background-size: cover;
+  height: 60%;
+} */
+
+<<<<<<< HEAD:src/styles/style.css
+/* Nav bar styles */
+.navBarStyle {
+  list-style-type: none;
+  text-align: left !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navTabs:active {
+  color: white;
+}
+
+.navTabs {
+  border-radius: 5px;
+  color: black;
+}
+
+.navTabs:focus {
+  background-color: #000000;
+  color: white;
+  outline: none;
+}
+
+.active a {
+  background-color: white !important;
+}
+
+.nav-link {
+  color: white;
+}
+
+/*footer*/
+=======
+/* * * * * * * *
+Footer Section
+* * * * * * * */
+>>>>>>> 62bd8652f7a36b013b44d47a849b5aa03c821ceb:src/styles/global.css
+.linkStyles {
+  color: white;
+  letter-spacing: 2px;
+}
+
+.footer {
+  color: white;
+}
+
+.footerStyles {
+  background-color: #313742;
+  border-top: 1px solid #E7E7E7;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  padding: 20px;
+  position: static;
+  left: 0;
+  bottom: 0;
+  height: 60px;
+  width: 100%;
+  margin-top: 5%;
+}
+
+<<<<<<< HEAD:src/styles/style.css
+/* Header styles */
+.headerStyle {
+  font-size: 70px;
+  color: black;
+  font-family: 'Lobster', cursive;
+  letter-spacing: 10px;
+  /*border: 2px solid white;*/
+  /* text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; */
+}
+
+/* font Styles*/
+.textStyling {
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.5px;
+  /* font-family: 'Lobster', cursive; */
+}
+
+.navFontStyling {
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 3px;
+}
+
+.h2Styling {
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 3px;
+}
+
+/** images styling **/
+=======
+/* * * * * * * *
+Images Styling  
+* * * * * * * */
+>>>>>>> 62bd8652f7a36b013b44d47a849b5aa03c821ceb:src/styles/global.css
+.imgStyling {
+  border-radius: 10%;
+  border: 2px solid black;
+}
+
+/* image paragraph styling */
+.imgPStyle {
+  border-radius: 2%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 250px;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: -webkit-box-shadow .3s;
+  transition: -webkit-box-shadow .3s;
+  transition: box-shadow .3s;
+  transition: box-shadow .3s, -webkit-box-shadow .3s;
+}
+
+.imgPStyle:hover {
+  cursor: pointer;
+  /* box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5); */
+  -webkit-box-shadow: 0 0 11px 1px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 11px 1px rgba(0, 0, 0, 0.5);
+}
+
+.imgPText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 30px;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 3px;
+  color: white;
+}
+
+/* * * * * * * *
+Nav bar styles 
+* * * * * * * */
+.navBarStyle {
+  list-style-type: none;
+  text-align: left !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 0;
+}
+
+.navTabs:active {
+  color: white;
+}
+
+.navTabs {
+  border-radius: 5px;
+  border: 2px solid #094074;
+  color: #094074;
+  background: white;
+  margin: 2% 1% 15% 5%;
+  width: 15%;
+  text-align: center;
+}
+
+.navTabs:focus {
+  background-color: #000000;
+  color: white;
+  outline: none;
+}
+
+.active a {
+  background-color: white !important;
+}
+
+.nav-link {
+  color: white;
+}
+
+<<<<<<< HEAD:src/styles/style.css
+/* .imgContainercenter{
+  align-self: 'center';
+} */
+/* Media query from Mobile viewport 424.999px and below */
+=======
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * 
+  Media query from Mobile viewport 424.999px and below 
+  * * * * * * * * * * * * * * * * * * * * * * * * * * */
+>>>>>>> 62bd8652f7a36b013b44d47a849b5aa03c821ceb:src/styles/global.css
+@media screen and (max-width: 424.999px) {
+  /* Changing the header size to 30px on mobile*/
+  .headerStyle {
+    font-size: 60px;
+    letter-spacing: 3px;
+  }
+  /*Smaller image size for mobile viewports */
+  .imgPStyle {
+    width: 150px;
+    height: 150px;
+  }
+  .navTabs {
+    margin: 2% 1% 1% 5%;
+  }
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * 
+  Media query from Mobile and Tablet viewport 767.999px and below 
+  * * * * * * * * * * * * * * * * * * * * * * * * * * */
+@media screen and (max-width: 767.999px) {
+  .errorBox {
+    width: 100%;
+  }
+  .errorBoxContainer {
+    height: 45%;
+  }
+  .navTabs {
+    margin: 2% 1% 4% 5%;
+    font-size: 14px;
+  }
+  .imgPText {
+    font-size: 20px;
+  }
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * 
+  Media query from Tablet viewport 425px to 1023.999px*
+  * * * * * * * * * * * * * * * * * * * * * * * * * * */
+@media (min-width: 425px) and (max-width: 1023.999px) {
+  .imgPStyle {
+    width: 200px;
+    height: 200px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
